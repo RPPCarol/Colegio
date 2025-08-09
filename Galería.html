@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px 50px;
+            background-color:rgb(3, 57, 65);
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ecf0f1;
+            margin-bottom: 30px;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .galeria img {
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.05);
+        }
+
+        .Boton-llamativo {
+background-color: #173ea8;
+color: #fcf8f8;
+border: 1px solid #eccbc1;
+padding: 10px 20px;
+font-size: 15px ;
+font-weight: bold;
+border-radius: 15px;
+cursor: pointer;
+box-shadow: 0 8px 16px #0c0c0c;
+}
+.Boton-llamativo:hover {  
+background: #34b7eb;
+transform: scale(1.2);
+}
+    </style>
+</head>
+<body>
+
+
+<h1>Galería</h1>
+
+<center><div class="galeria">
+    <img src="largo.jpeg" alt="Logo del colegio">
+    <img src="nosotros.jpeg" alt="Foto 1">
+    <img src="entrada.jpeg" alt="Foto 2">
+    <img src="3.jpg" alt="Foto 3">
+    <img src="8.jpg" alt="Foto 4">
+    <img src="glorieta.jpeg" alt="Foto 5">
+    <img src="abajo.jpeg" alt="Foto 6">
+    <img src="atras.jpeg" alt="Foto 7">
+    <img src="5.jpg" alt="Foto 8">
+    <img src="constr.jpeg" alt="Foto 9">
+    <img src="electri.jpeg" alt="Foto 10">
+    <img src="baños.jpeg" alt="Foto 11">
+    
+</div></center>
+<a href="index.html"> <button class="Boton-llamativo">Regresar</button></a>
+        
+</body>
+</html>

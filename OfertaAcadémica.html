@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Oferta Académica</title>
+        <style>
+           body {
+
+background-color: rgb(3, 57, 65);
+font-family: 'Times New Roman', Times, serif;
+
+
+}
+
+ .párrafo {
+width: 90%;
+margin: 25px auto ;
+padding: 20px;
+border: 3px solid #eccbc1;
+border-radius: 10px;
+background: linear-gradient(190deg,#036186, #011a2b);
+box-shadow:  5px 8px 16px #0c0c0c;
+color: aliceblue;
+
+}
+            .Boton-llamativo {
+background-color: #173ea8;
+color: #fcf8f8;
+border: 1px solid #eccbc1;
+padding: 10px 20px;
+font-size: 15px ;
+font-weight: bold;
+border-radius: 15px;
+cursor: pointer;
+box-shadow: 0 8px 16px #0c0c0c;
+}
+.Boton-llamativo:hover {  
+background: #34b7eb;
+transform: scale(1.2);
+}
+
+
+.offer-container{
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 40px 60px;
+  background: linear-gradient(190deg,#036186, #011a2b);
+  border: 4px solid rgba(255,255,255,.85);
+  border-radius: 18px;
+  box-shadow: 0 8px 28px rgba(0,0,0,.40);
+  color:#f6faff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing:.3px;
+}
+
+.offer-title{
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  text-shadow: 0 2px 6px rgba(0,0,0,.35);
+}
+
+.offer-flex{
+  display:flex;
+  flex-wrap:wrap;
+  gap:50px;
+  justify-content:center;
+}
+
+.offer-section{
+  flex:1 1 340px;
+}
+
+.offer-section h3{
+  font-size:1.1rem;
+  margin-bottom:14px;
+  padding-bottom:8px;
+  border-bottom:2px solid rgba(255,255,255,.25);
+  text-transform:uppercase;
+  letter-spacing:.6px;
+}
+
+.offer-section ul{
+  list-style:none;
+  padding-left:0;
+}
+
+.offer-section li{
+  position:relative;
+  padding-left:26px;
+  margin:8px 0;
+}
+
+.offer-section li::before{
+  content:'•';
+  position:absolute;
+  left:0;
+  color:#00b1fa;
+  font-size:1.1rem;
+}
+
+.offer-section li:hover{
+  color:#00b1fa;
+  transform:translateX(4px);
+  transition:all .25s ease;
+}
+            
+        </style>
+    </head>
+    <body>
+        
+        <div class="offer-container">
+            <h2 class="offer-title">Oferta Académica</h2>
+          
+            <div class="offer-flex">
+              <!-- Módulos -->
+              <div class="offer-section">
+                <h3>Módulos de Nivel Básico</h3>
+                <ul>
+                  <li>Hogar</li>
+                  <li>Madera</li>
+                  <li>Electricidad</li>
+                  <li>Construcciones Metálicas</li>
+                </ul>
+              </div>
+          
+              <!-- Carreras -->
+              <div class="offer-section">
+                <h3>Carreras de Bachillerato</h3>
+                <ul>
+                  <li>BTP Administración Hotelera</li>
+                  <li>BTP Informática</li>
+                  <li>BTP Electricidad</li>
+                  <li>BTP Construcciones Metálicas</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        <a href="index.html"> <button class="Boton-llamativo">Regresar</button></a>
+        
+    </body>
+</html>

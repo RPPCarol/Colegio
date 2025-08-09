@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Estudiantes y Docentes</title>
+</head>
+<style>
+   body {
+                font-family: 'Times New Roman', Times, serif;
+                background-color: rgb(3, 57, 65);
+            }
+            .menu {
+                list-style: none;/*Elimina los estilos predeterminados de
+                las listas (<ul>), como los puntos o viñetas*/
+                padding:0; 
+                display:flex;
+                gap: 100px;
+                padding-left: 550px;
+            }
+            .menu li {
+               position: relative;
+               
+               padding: 10px;
+               color: white;
+               cursor: auto;
+               border-radius: 25px;
+            }
+            .submenu {
+                display: none;
+                position:absolute;
+                top: 100%;
+                left:10;
+                right: 0;
+                background-color: white;
+                color: black;
+                border:5px solid #011624;
+                border-radius: 5px;
+            }
+            .submenu table {
+                border-collapse: collapse;
+                width:100%;
+            }
+    .submenu td, .submenu th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+          .menu li:hover .submenu {
+            display: block;
+          }
+          .Boton-llamativo {
+background-color: #173ea8;
+color: #fcf8f8;
+border: 1px solid #eccbc1;
+padding: 10px 20px;
+font-size: 15px ;
+font-weight: bold;
+border-radius: 15px;
+cursor: pointer;
+box-shadow: 0 8px 16px #0c0c0c;
+}
+.Boton-llamativo:hover {  
+background: #34b7eb;
+transform: scale(1.2);
+}
+   
+        </style>
+    </head>
+
+    
+    <center><h3>Docentes y Estudiantes</h3></center>
+<body>
+    <ul class="menu"> 
+        <li>
+            
+           <button class="Boton-llamativo"> Docentes</button>
+            <div class="submenu">
+            <table>
+            <tr><th>Docentes</th></tr>
+            <td><a href="Secretar%C3%ADa%20de%20Educaci%C3%B3n.pdf" class="btn-facebook" target=_blank><button class="Boton-llamativo">Docentes 2025</button></a></td>
+            </table>
+        </li>
+        <li >
+            
+            <button class="Boton-llamativo">Estudiantes</button>
+            <div class="submenu">
+            <table>
+            <tr><th>Estudiantes</th></tr>
+            <button>Estudiantes 2025</button></a></td>
+            </table>
+        </li>
+</ul>
+</div>
+
+        <a href="index.html"><button class ="Boton-llamativo">Regresar</button></a>         
+</body>
+
+        
+</html>

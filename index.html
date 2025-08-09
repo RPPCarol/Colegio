@@ -1,0 +1,268 @@
+<html lang="es">
+    <head>
+        <title>Index</title>
+        <style>
+            body {
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position:center center;
+                background-color: rgb(3, 57, 65);
+                height: 100vh;
+                margin: 0%;
+                font-family: 'Times New Roman', Times, serif;
+                
+            }
+.contenedor {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #000;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgb(3, 57, 65);
+    perspective: 1000px; /* Da profundidad al giro 3d*/
+}
+.imagen-giratoria{
+    width: 200px ;
+    height: 200px ;
+    animation: girarYInverso 10s linear infinite;
+    transform-style: preserve-3d;
+}
+@keyframes girarYInverso {
+    from {
+        transform: rotateY(0deg);
+    }
+
+to{
+    transform: rotateY(-360deg);
+}
+}
+
+
+            .menu {
+                list-style: none;/*Elimina los estilos predeterminados de
+                las listas (<ul>), como los puntos o viñetas*/
+                padding:0; 
+                display:flex;
+                gap: 70px;
+                padding-left: 100px;
+            } 
+            .menu li {
+               position: relative;
+               padding: 10px;
+               color: rgb(248, 248, 248);
+               cursor: pointer;
+               border-radius: 25px;
+            }
+            .submenu {
+                display: none;
+                position:absolute;
+                top: 100%;
+                right: 0;
+                background-color: white;
+                color: black;
+                border:10px solid #011624;
+                border-radius: 5px;
+            }
+            .submenu table {
+                border-collapse: collapse;
+                width:100%;
+            }
+    .submenu td, .submenu th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+          .menu li:hover .submenu {
+            display: block;
+          }
+          .Boton-llamativo {
+background-color: #173ea8;
+color: #fcf8f8;
+border: 1px solid #eccbc1;
+padding: 10px 20px;
+font-size: 15px ;
+font-weight: bold;
+border-radius: 15px;
+cursor: pointer;
+box-shadow: 0 8px 16px #0c0c0c;
+}
+.Boton-llamativo:hover {  
+background: #34b7eb;
+transform: scale(1.2);
+}
+/* ───── Estilo profesional para la tabla principal ───── */
+table.info-table{
+    width: 100%;
+    border-collapse: collapse;          /* une bordes */
+    background: rgba(255,255,255,0.06); /* efecto glass sutil */
+    backdrop-filter: blur(8px);         /* desenfoque */
+    border-radius: 16px;                /* esquinas redondeadas */
+    overflow: hidden;                   /* respeta el radio */
+    box-shadow: 0 8px 24px rgba(0,0,0,.35);
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    letter-spacing: .3px;
+}
+
+/* Encabezados (celdas <th>) */
+.info-table th{
+    background: linear-gradient(135deg,#0059ff 0%,#00b1fa 100%);
+    color: #fff;
+    font-weight: 600;
+    padding: 14px 20px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+/* Celdas normales */
+.info-table td{
+    padding: 12px 20px;
+    color: #e9e9e9;
+    border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+/* Filas pares con tono alterno */
+.info-table tr:nth-child(even){
+    background: rgba(255,255,255,0.03);
+}
+
+/* Efecto hover para resaltar fila */
+.info-table tr:hover{
+    background: rgba(0,177,250,.20);
+    transition: background .3s ease;
+}
+  .imagen-final {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.imagen-final img {
+  width: 300px; /* puedes cambiar el tamaño */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.imagen-final img:hover {
+  transform: scale(1.05);
+} 
+.titulo-principal {
+  font-size: 25px;
+  font-family: 'Georgia', serif;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #0f6e8c;
+  margin: 0;
+  padding: 10px 0;
+}
+
+
+        </style>
+    </head>
+
+    
+</head>
+
+<body>
+
+
+
+<ul class="menu"> 
+    
+<li>
+    
+<table>
+        
+       <tr> <th><a href="Sobre%20Nosotros.html"><button class="Boton-llamativo" >Sobre Nosotros</button></a></tr></th>
+        
+    </table>
+</div>
+    
+</li>
+<li>
+    
+    
+    <table>
+       
+        <tr><th><a href="OfertaAcadémica.html"><button class="Boton-llamativo" > Oferta Académica</button></a></tr></th></button>
+        
+    </table>     
+</li>
+<li>
+    
+<table>
+        
+        <tr><th><a href="EstudiantesyDocentes.html"><button class="Boton-llamativo" >Estudiantes y Docentes</button></a></tr></th>
+        
+        
+    </table>
+</li>
+<li>
+
+    
+    <table>
+        
+        <tr><th><a href="Galería.html"><button class="Boton-llamativo" >Galería</button></a></tr></th>
+        
+    </table>
+</li> 
+    </div>     
+
+<li>
+    
+    <table> 
+        <tr><th> <a href="Contacto.html"><button class="Boton-llamativo" >Contacto</button></a></th></tr>
+        
+    
+    </table>
+
+    </div>
+</li>
+</ul>
+<center><table class="info-table" width="100%">
+    <tr> 
+        <td rowspan="2" valign="top"> <center><img src="logo.png" alt="" width="200" height="150" class="imagen-giratoria"></center> </td>
+        <td> <center><h1 class="titulo-principal"> Instituto Rafael Pineda Ponce</h1></center></td>
+        </tr>
+        <tr>
+        
+
+            <td><table class="info-table" width="60%">
+            <tr>
+               <td>Información:</td>
+                <td>Detalles:</td>
+            </tr>
+         
+        
+         <tr>
+            
+            <td>Nombre del Colegio</td>
+            <td>Rafael Pineda Ponce</td>
+            </tr>  
+         <tr>
+            <td>Ubicación</td>
+            <td>Santiago, Tela, Atlántida</td>
+        </tr>
+        <tr>
+            <td>Especialidad</td>
+            <td>Técnico</td>
+             </tr>
+
+        <tr>
+            <td>Contacto</td>
+            <td>9675-0078</td>
+        </tr>
+        </table>
+    </center>
+    <!-- ⬇️ NUEVO BLOQUE -->
+<div class="imagen-final">
+  <img src="nosotros.jpeg" alt="Instituto Rafael Pineda Ponce">
+</div>
+<!-- ⬆️ NUEVO BLOQUE -->
+
+</body>
+</html>
+   
+
